@@ -1,0 +1,11 @@
+requests
+beautifulsoup4
+mysql-connector-python
+pyyaml
+tenacity
+textblob
+scikit-learn
+numpy
+edge-tts
+moviepy
+Pillow

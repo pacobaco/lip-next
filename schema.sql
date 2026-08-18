@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS lip CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE lip;
+
+CREATE TABLE url (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    url VARCHAR(2048) NOT NULL,
+    title VARCHAR(512),
+    scraped_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uk_url (url(768))
+) ENGINE=InnoDB;
+
+CREATE TABLE keyword (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    keyword VARCHAR(255) NOT NULL,
+    UNIQUE KEY uk_keyword (keyword)
+) ENGINE=InnoDB;
